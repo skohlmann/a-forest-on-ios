@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		45DC0D4A261F1E4B006C2B16 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D49261F1E4B006C2B16 /* Tests_iOS.swift */; };
-		45DC0D55261F1E4B006C2B16 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D54261F1E4B006C2B16 /* Tests_macOS.swift */; };
 		45DC0D57261F1E4B006C2B16 /* ForestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */; };
 		45DC0D58261F1E4B006C2B16 /* ForestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */; };
-		45DC0D59261F1E4B006C2B16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2F261F1E4A006C2B16 /* ContentView.swift */; };
-		45DC0D5A261F1E4B006C2B16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2F261F1E4A006C2B16 /* ContentView.swift */; };
+		45DC0D59261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */; };
+		45DC0D5A261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */; };
 		45DC0D5B261F1E4B006C2B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DC0D30261F1E4B006C2B16 /* Assets.xcassets */; };
 		45DC0D5C261F1E4B006C2B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DC0D30261F1E4B006C2B16 /* Assets.xcassets */; };
+		45DC0D7926201EB9006C2B16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D7826201EB9006C2B16 /* Utils.swift */; };
+		45DC0D7A26201EB9006C2B16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D7826201EB9006C2B16 /* Utils.swift */; };
+		45DC0D8B2621815C006C2B16 /* FractalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D8A2621815C006C2B16 /* FractalTree.swift */; };
+		45DC0D8C2621815C006C2B16 /* FractalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D8A2621815C006C2B16 /* FractalTree.swift */; };
+		45DC0D9926218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
+		45DC0D9A26218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
+		45DC0D9B26218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
+		45DC0D9C26218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
+		45DC0DAE2621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
+		45DC0DAF2621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
+		45DC0DB02621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
+		45DC0DB12621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +47,20 @@
 
 /* Begin PBXFileReference section */
 		45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestApp.swift; sourceTree = "<group>"; };
-		45DC0D2F261F1E4A006C2B16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDropView.swift; sourceTree = "<group>"; };
 		45DC0D30261F1E4B006C2B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DC0D35261F1E4B006C2B16 /* Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC0D38261F1E4B006C2B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DC0D3D261F1E4B006C2B16 /* Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		45DC0D3F261F1E4B006C2B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45DC0D40261F1E4B006C2B16 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		45DC0D45261F1E4B006C2B16 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC0D49261F1E4B006C2B16 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		45DC0D4B261F1E4B006C2B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DC0D50261F1E4B006C2B16 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45DC0D54261F1E4B006C2B16 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		45DC0D56261F1E4B006C2B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45DC0D73261F919D006C2B16 /* Forest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Forest.entitlements; sourceTree = "<group>"; };
+		45DC0D7826201EB9006C2B16 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		45DC0D8A2621815C006C2B16 /* FractalTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalTree.swift; sourceTree = "<group>"; };
+		45DC0D9826218A83006C2B16 /* FractalBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalBranch.swift; sourceTree = "<group>"; };
+		45DC0DAD2621E09C006C2B16 /* ForestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +98,10 @@
 		45DC0D28261F1E4A006C2B16 = {
 			isa = PBXGroup;
 			children = (
+				45DC0D73261F919D006C2B16 /* Forest.entitlements */,
 				45DC0D2D261F1E4A006C2B16 /* Shared */,
 				45DC0D37261F1E4B006C2B16 /* iOS */,
-				45DC0D3E261F1E4B006C2B16 /* macOS */,
 				45DC0D48261F1E4B006C2B16 /* Tests iOS */,
-				45DC0D53261F1E4B006C2B16 /* Tests macOS */,
 				45DC0D36261F1E4B006C2B16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,8 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */,
-				45DC0D2F261F1E4A006C2B16 /* ContentView.swift */,
+				45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */,
 				45DC0D30261F1E4B006C2B16 /* Assets.xcassets */,
+				45DC0D7826201EB9006C2B16 /* Utils.swift */,
+				45DC0D8A2621815C006C2B16 /* FractalTree.swift */,
+				45DC0D9826218A83006C2B16 /* FractalBranch.swift */,
+				45DC0DAD2621E09C006C2B16 /* ForestView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -124,15 +139,6 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		45DC0D3E261F1E4B006C2B16 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				45DC0D3F261F1E4B006C2B16 /* Info.plist */,
-				45DC0D40261F1E4B006C2B16 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		45DC0D48261F1E4B006C2B16 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,15 +146,6 @@
 				45DC0D4B261F1E4B006C2B16 /* Info.plist */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		45DC0D53261F1E4B006C2B16 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				45DC0D54261F1E4B006C2B16 /* Tests_macOS.swift */,
-				45DC0D56261F1E4B006C2B16 /* Info.plist */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45DC0D59261F1E4B006C2B16 /* ContentView.swift in Sources */,
+				45DC0D59261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */,
+				45DC0D8B2621815C006C2B16 /* FractalTree.swift in Sources */,
 				45DC0D57261F1E4B006C2B16 /* ForestApp.swift in Sources */,
+				45DC0D9926218A83006C2B16 /* FractalBranch.swift in Sources */,
+				45DC0D7926201EB9006C2B16 /* Utils.swift in Sources */,
+				45DC0DAE2621E09C006C2B16 /* ForestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45DC0D5A261F1E4B006C2B16 /* ContentView.swift in Sources */,
+				45DC0D5A261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */,
+				45DC0D8C2621815C006C2B16 /* FractalTree.swift in Sources */,
 				45DC0D58261F1E4B006C2B16 /* ForestApp.swift in Sources */,
+				45DC0D9A26218A83006C2B16 /* FractalBranch.swift in Sources */,
+				45DC0D7A26201EB9006C2B16 /* Utils.swift in Sources */,
+				45DC0DAF2621E09C006C2B16 /* ForestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DC0D4A261F1E4B006C2B16 /* Tests_iOS.swift in Sources */,
+				45DC0D9B26218A83006C2B16 /* FractalBranch.swift in Sources */,
+				45DC0DB02621E09C006C2B16 /* ForestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +341,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45DC0D55261F1E4B006C2B16 /* Tests_macOS.swift in Sources */,
+				45DC0D9C26218A83006C2B16 /* FractalBranch.swift in Sources */,
+				45DC0DB12621E09C006C2B16 /* ForestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Forest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7NWV338ML;
 				ENABLE_PREVIEWS = YES;
@@ -482,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.speexx.Forest;
 				PRODUCT_NAME = Forest;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Forest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7NWV338ML;
 				ENABLE_PREVIEWS = YES;
@@ -504,6 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.speexx.Forest;
 				PRODUCT_NAME = Forest;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -529,7 +541,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.speexx.Forest;
 				PRODUCT_NAME = Forest;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -553,7 +565,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.speexx.Forest;
 				PRODUCT_NAME = Forest;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
