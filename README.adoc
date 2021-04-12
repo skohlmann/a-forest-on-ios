@@ -5,3 +5,5 @@ This is a simple project to learn Swift on iOS and macOS.
 The project will use SpriteKit and SwiftUI to create a simple fractal tree.
 In the following I'll go deeper into the physical aspects of trees with SpriteKit or may transfor the project to SceneKit.
 May be finally there is a real forest generation.
+
+image::default-tree.png[Tree,400,367]
