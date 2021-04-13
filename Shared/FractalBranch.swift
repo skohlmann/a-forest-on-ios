@@ -11,6 +11,7 @@ import SwiftUI
 
 class FractalBranch : SKShapeNode {
     
+    private let originalLength : Float
     let length : Float
     let angle : Float
     let level : Int
@@ -23,7 +24,7 @@ class FractalBranch : SKShapeNode {
             if level == 0 {
                 return self.template.growSteps
             }
-            return self.template.growSteps & level
+            return self.template.growSteps / level
         }
     }
     
@@ -33,24 +34,18 @@ class FractalBranch : SKShapeNode {
         }
     }
     
-    var growPercentage : Float {
-        get {
-            return 1.0 / Float(self.currentGrowSteps) * Float(self.template.growSteps)
-        }
-    }
-    
     private var growLength : Float {
         get {
-            return self.length * self.growPercentage
+            return (self.length / Float(self.growSteps)) * Float(self.currentGrowSteps)
         }
     }
     
     private var branchLength : Float {
         get {
-            self.length * self.template.sizeMultiplier
+            self.originalLength * self.template.sizeMultiplier
         }
     }
-
+    
     var end : CGPoint {
         get {
             return CGPoint(x:0, y:CGFloat(length))
@@ -58,16 +53,17 @@ class FractalBranch : SKShapeNode {
     }
     
     init(name : String = "", startPosition : CGPoint, length : Float, angle : Float, level : Int, template : FractalBranchTemplate = FractalBranchTemplate()) {
-        self.length = length
-        self.angle = angle
+        self.originalLength = length
+        self.angle = angle * -1.0
         self.template = template
         self.level = level
+        self.length = length + Float.random(in: template.branchLengthJitterLowBoundry...template.branchLengthJitterHightBoundry) * length
         super.init()
         self.position = startPosition
         self.zRotation = radians(CGFloat(self.angle))
         self.name = name + "." + level.description
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -84,8 +80,8 @@ class FractalBranch : SKShapeNode {
             if l >= self.length {
                 self.finished = true
                 let branchPosition = end
-                let leftBranch = FractalBranch(name : "branch", startPosition: branchPosition, length: branchLength, angle: branchAngle, level: self.level + 1)
-                let rightBranch = FractalBranch(name : "branch", startPosition: branchPosition, length: branchLength, angle: branchAngle * -1, level: self.level + 1)
+                let leftBranch = FractalBranch(name : "branch.left", startPosition: branchPosition, length: branchLength, angle: branchAngle, level: self.level + 1)
+                let rightBranch = FractalBranch(name : "branch.right", startPosition: branchPosition, length: branchLength, angle: branchAngle * -1, level: self.level + 1)
                 addChild(leftBranch)
                 addChild(rightBranch)
                 newBranch.toggle()
@@ -103,7 +99,7 @@ class FractalBranch : SKShapeNode {
     
     private var branchAngle : Float {
         get {
-            var newAngle = self.template.nextBranchAngle
+            var newAngle = self.template.nextBranchAngle + Float.random(in: template.branchLengthJitterLowBoundry...template.branchLengthJitterHightBoundry) * self.template.nextBranchAngle
             while newAngle < -360 || newAngle > 360 {
                 if (newAngle < -360) {
                     newAngle += 360
@@ -124,11 +120,12 @@ class FractalBranch : SKShapeNode {
 struct FractalBranchTemplate {
     var sizeMultiplier : Float = 0.67
     var nextBranchAngle : Float = 45.0
-    var branchLengthJitterLowBoundry : Float = -0.1
-    var branchLengthJitterHightBoundry : Float = 0.1
-    var branchAngleJitterLowBoundry : Float = -0.1
-    var branchAngleJitterHightBoundry : Float = 0.1
+    var branchLengthJitterLowBoundry : Float = -0.2
+    var branchLengthJitterHightBoundry : Float = 0.2
+    var branchAngleJitterLowBoundry : Float = -0.3
+    var branchAngleJitterHightBoundry : Float = 0.3
     var color : UIColor = .yellow
     var branchWeight : Float = 1
-    var growSteps : Int = 1
+    var growSteps : Int = 20
+    var firstLeafLevel = 1
 }

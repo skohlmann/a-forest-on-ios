@@ -44,7 +44,7 @@ struct ForestView: View {
         scene.scaleMode = .fill
         scene.backgroundColor = .black
 
-        let baseTree = FractalTree(name : "tree.1", root:CGPoint(x:300, y:0), angle: 0)
+        let baseTree = FractalTree(name : "tree.1", root:CGPoint(x:300, y:0), angle: 5)
         scene.add(tree: baseTree)
         return scene
     }
