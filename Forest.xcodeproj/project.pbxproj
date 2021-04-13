@@ -9,23 +9,14 @@
 /* Begin PBXBuildFile section */
 		45DC0D4A261F1E4B006C2B16 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D49261F1E4B006C2B16 /* Tests_iOS.swift */; };
 		45DC0D57261F1E4B006C2B16 /* ForestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */; };
-		45DC0D58261F1E4B006C2B16 /* ForestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */; };
 		45DC0D59261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */; };
-		45DC0D5A261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */; };
 		45DC0D5B261F1E4B006C2B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DC0D30261F1E4B006C2B16 /* Assets.xcassets */; };
-		45DC0D5C261F1E4B006C2B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DC0D30261F1E4B006C2B16 /* Assets.xcassets */; };
 		45DC0D7926201EB9006C2B16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D7826201EB9006C2B16 /* Utils.swift */; };
-		45DC0D7A26201EB9006C2B16 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D7826201EB9006C2B16 /* Utils.swift */; };
 		45DC0D8B2621815C006C2B16 /* FractalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D8A2621815C006C2B16 /* FractalTree.swift */; };
-		45DC0D8C2621815C006C2B16 /* FractalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D8A2621815C006C2B16 /* FractalTree.swift */; };
 		45DC0D9926218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
-		45DC0D9A26218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
 		45DC0D9B26218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
-		45DC0D9C26218A83006C2B16 /* FractalBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D9826218A83006C2B16 /* FractalBranch.swift */; };
 		45DC0DAE2621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
-		45DC0DAF2621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
 		45DC0DB02621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
-		45DC0DB12621E09C006C2B16 /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0DAD2621E09C006C2B16 /* ForestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +27,6 @@
 			remoteGlobalIDString = 45DC0D34261F1E4B006C2B16;
 			remoteInfo = "Forest (iOS)";
 		};
-		45DC0D51261F1E4B006C2B16 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 45DC0D29261F1E4A006C2B16 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45DC0D3C261F1E4B006C2B16;
-			remoteInfo = "Forest (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -51,11 +35,9 @@
 		45DC0D30261F1E4B006C2B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DC0D35261F1E4B006C2B16 /* Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC0D38261F1E4B006C2B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45DC0D3D261F1E4B006C2B16 /* Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC0D45261F1E4B006C2B16 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC0D49261F1E4B006C2B16 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		45DC0D4B261F1E4B006C2B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45DC0D50261F1E4B006C2B16 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DC0D73261F919D006C2B16 /* Forest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Forest.entitlements; sourceTree = "<group>"; };
 		45DC0D7826201EB9006C2B16 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		45DC0D8A2621815C006C2B16 /* FractalTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalTree.swift; sourceTree = "<group>"; };
@@ -71,21 +53,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45DC0D3A261F1E4B006C2B16 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45DC0D42261F1E4B006C2B16 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45DC0D4D261F1E4B006C2B16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,9 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				45DC0D35261F1E4B006C2B16 /* Forest.app */,
-				45DC0D3D261F1E4B006C2B16 /* Forest.app */,
 				45DC0D45261F1E4B006C2B16 /* Tests iOS.xctest */,
-				45DC0D50261F1E4B006C2B16 /* Tests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,23 +134,6 @@
 			productReference = 45DC0D35261F1E4B006C2B16 /* Forest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		45DC0D3C261F1E4B006C2B16 /* Forest (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45DC0D62261F1E4B006C2B16 /* Build configuration list for PBXNativeTarget "Forest (macOS)" */;
-			buildPhases = (
-				45DC0D39261F1E4B006C2B16 /* Sources */,
-				45DC0D3A261F1E4B006C2B16 /* Frameworks */,
-				45DC0D3B261F1E4B006C2B16 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Forest (macOS)";
-			productName = "Forest (macOS)";
-			productReference = 45DC0D3D261F1E4B006C2B16 /* Forest.app */;
-			productType = "com.apple.product-type.application";
-		};
 		45DC0D44261F1E4B006C2B16 /* Tests iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45DC0D65261F1E4B006C2B16 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
@@ -203,24 +152,6 @@
 			productReference = 45DC0D45261F1E4B006C2B16 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		45DC0D4F261F1E4B006C2B16 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45DC0D68261F1E4B006C2B16 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				45DC0D4C261F1E4B006C2B16 /* Sources */,
-				45DC0D4D261F1E4B006C2B16 /* Frameworks */,
-				45DC0D4E261F1E4B006C2B16 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				45DC0D52261F1E4B006C2B16 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 45DC0D50261F1E4B006C2B16 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,16 +164,9 @@
 					45DC0D34261F1E4B006C2B16 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					45DC0D3C261F1E4B006C2B16 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					45DC0D44261F1E4B006C2B16 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 45DC0D34261F1E4B006C2B16;
-					};
-					45DC0D4F261F1E4B006C2B16 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 45DC0D3C261F1E4B006C2B16;
 					};
 				};
 			};
@@ -260,9 +184,7 @@
 			projectRoot = "";
 			targets = (
 				45DC0D34261F1E4B006C2B16 /* Forest (iOS) */,
-				45DC0D3C261F1E4B006C2B16 /* Forest (macOS) */,
 				45DC0D44261F1E4B006C2B16 /* Tests iOS */,
-				45DC0D4F261F1E4B006C2B16 /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -276,22 +198,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45DC0D3B261F1E4B006C2B16 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45DC0D5C261F1E4B006C2B16 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45DC0D43261F1E4B006C2B16 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45DC0D4E261F1E4B006C2B16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,19 +221,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45DC0D39261F1E4B006C2B16 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45DC0D5A261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */,
-				45DC0D8C2621815C006C2B16 /* FractalTree.swift in Sources */,
-				45DC0D58261F1E4B006C2B16 /* ForestApp.swift in Sources */,
-				45DC0D9A26218A83006C2B16 /* FractalBranch.swift in Sources */,
-				45DC0D7A26201EB9006C2B16 /* Utils.swift in Sources */,
-				45DC0DAF2621E09C006C2B16 /* ForestView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45DC0D41261F1E4B006C2B16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,15 +231,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45DC0D4C261F1E4B006C2B16 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45DC0D9C26218A83006C2B16 /* FractalBranch.swift in Sources */,
-				45DC0DB12621E09C006C2B16 /* ForestView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -353,11 +238,6 @@
 			isa = PBXTargetDependency;
 			target = 45DC0D34261F1E4B006C2B16 /* Forest (iOS) */;
 			targetProxy = 45DC0D46261F1E4B006C2B16 /* PBXContainerItemProxy */;
-		};
-		45DC0D52261F1E4B006C2B16 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45DC0D3C261F1E4B006C2B16 /* Forest (macOS) */;
-			targetProxy = 45DC0D51261F1E4B006C2B16 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,54 +402,6 @@
 			};
 			name = Release;
 		};
-		45DC0D63261F1E4B006C2B16 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U7NWV338ML;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.speexx.Forest;
-				PRODUCT_NAME = Forest;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		45DC0D64261F1E4B006C2B16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U7NWV338ML;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.speexx.Forest;
-				PRODUCT_NAME = Forest;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		45DC0D66261F1E4B006C2B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,50 +447,6 @@
 			};
 			name = Release;
 		};
-		45DC0D69261F1E4B006C2B16 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U7NWV338ML;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.speexx.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Forest (macOS)";
-			};
-			name = Debug;
-		};
-		45DC0D6A261F1E4B006C2B16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = U7NWV338ML;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.speexx.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Forest (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,29 +468,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45DC0D62261F1E4B006C2B16 /* Build configuration list for PBXNativeTarget "Forest (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45DC0D63261F1E4B006C2B16 /* Debug */,
-				45DC0D64261F1E4B006C2B16 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		45DC0D65261F1E4B006C2B16 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45DC0D66261F1E4B006C2B16 /* Debug */,
 				45DC0D67261F1E4B006C2B16 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		45DC0D68261F1E4B006C2B16 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45DC0D69261F1E4B006C2B16 /* Debug */,
-				45DC0D6A261F1E4B006C2B16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

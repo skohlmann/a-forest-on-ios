@@ -17,7 +17,6 @@ class FractalTree {
     let maxLevel : Int
     let trunk : FractalBranch
     
-    var currentLevel : Int
     var canGrow : Bool {
         get {
             var current : FractalBranch = self.trunk
@@ -36,19 +35,16 @@ class FractalTree {
         }
     }
 
-    init(name : String = "tree", root : CGPoint, maxTrunkLength : Float = 150, angle : Float = 0, maxLevel : Int = 10) {
+    init(name : String = "tree", root : CGPoint, maxTrunkLength : Float = 150, angle : Float = 0, template : FractalBranchTemplate = FractalBranchTemplate()) {
         self.root = root
         self.name = name
         self.maxTrunkLength = maxTrunkLength
         self.angle = angle
-        self.maxLevel = maxLevel
-        self.currentLevel = 0
-        self.trunk = FractalBranch(name: "trunk", startPosition: self.root, length: self.maxTrunkLength, angle: self.angle, level: 0)
+        self.trunk = FractalBranch(name: "trunk", startPosition: self.root, length: self.maxTrunkLength, angle: 0, level: 0, template: template)
+        self.maxLevel = template.maxLevel
     }
     
-    func growIfPossible() {
-        if canGrow {
-            self.trunk.grow()
-        }
+    func startGrowing() {
+        self.trunk.startGrowing()
     }
 }

@@ -71,33 +71,34 @@ class FractalBranch : SKShapeNode {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    fileprivate func createNewBranches() {
+        if self.level < self.template.maxLevel {
+            let branchPosition = end
+            let leftBranch = FractalBranch(name : "branch.left", startPosition: branchPosition, length: branchLength, angle: branchAngle, level: self.level + 1)
+            let rightBranch = FractalBranch(name : "branch.right", startPosition: branchPosition, length: branchLength, angle: branchAngle * -1, level: self.level + 1)
+            addChild(leftBranch)
+            addChild(rightBranch)
+            leftBranch.startGrowing()
+            rightBranch.startGrowing()
+        }
+    }
     
     func grow() {
-        var newBranch = false
         if canGrow {
             self.currentGrowSteps += 1
             let path = CGMutablePath()
-            self.fillColor = self.template.color
+            self.strokeColor = self.template.color
             let l = growLength
             path.addLines(between: [CGPoint(x:0,y:0), CGPoint(x:0, y:Int(growLength))])
             self.path = path
             if l >= self.length {
-                self.finished = true
-                let branchPosition = end
-                let leftBranch = FractalBranch(name : "branch.left", startPosition: branchPosition, length: branchLength, angle: branchAngle, level: self.level + 1)
-                let rightBranch = FractalBranch(name : "branch.right", startPosition: branchPosition, length: branchLength, angle: branchAngle * -1, level: self.level + 1)
-                addChild(leftBranch)
-                addChild(rightBranch)
-                newBranch.toggle()
+                self.finished.toggle()
+                createNewBranches()
             }
         }
-        if !newBranch && !self.children.isEmpty {
-            for e in self.children {
-                if e is FractalBranch {
-                    let branch = e as! FractalBranch
-                    branch.grow()
-                }
-            }
+        if self.hasActions() && isFinished() {
+            self.removeAllActions()
         }
     }
     
@@ -115,6 +116,19 @@ class FractalBranch : SKShapeNode {
         }
     }
     
+    func startGrowing() {
+        if !isGrowing() && !isFinished() {
+            self.run(SKAction.customAction(withDuration: 3.0, actionBlock: {node, ellapsedTime in
+                let b = node as! FractalBranch
+                b.grow()
+            }), withKey: "growing")
+        }
+    }
+    
+    func isGrowing() -> Bool {
+        return self.action(forKey: "growing") != nil
+    }
+    
     func isFinished() -> Bool {
         return self.finished
     }
@@ -128,8 +142,9 @@ struct FractalBranchTemplate {
     var branchLengthJitterHightBoundry : Float = 0.2
     var branchAngleJitterLowBoundry : Float = -0.3
     var branchAngleJitterHightBoundry : Float = 0.3
-    var color : UIColor = .yellow
+    var color : SKColor = .lightGray
     var branchWeight : Float = 1
     var growSteps : Int = 20
     var firstLeafLevel = 1
+    var maxLevel = 10
 }
