@@ -36,7 +36,11 @@ class FractalBranch : SKShapeNode {
     
     private var growLength : Float {
         get {
-            return (self.length / Float(self.growSteps)) * Float(self.currentGrowSteps)
+            let l = (self.length / Float(self.growSteps)) * Float(self.currentGrowSteps)
+            if l > self.length {
+                return self.length
+            }
+            return l
         }
     }
     
