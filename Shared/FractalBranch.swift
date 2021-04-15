@@ -81,15 +81,15 @@ class FractalBranch : SKShapeNode {
     fileprivate func createNewBranches() {
         if self.level < self.template.maxLevel {
             let branchPosition = end
-            let leftBranch = FractalBranch(name : "branch.left", startPosition: branchPosition, length: branchLength, angle: branchAngle, level: self.level + 1)
-            let rightBranch = FractalBranch(name : "branch.right", startPosition: branchPosition, length: branchLength, angle: branchAngle * -1, level: self.level + 1)
+            let leftBranch = FractalBranch(name : "branch.left", startPosition: branchPosition, length: branchLength, angle: branchAngle, level: self.level + 1, template : self.template)
+            let rightBranch = FractalBranch(name : "branch.right", startPosition: branchPosition, length: branchLength, angle: branchAngle * -1, level: self.level + 1, template : self.template)
             addChild(leftBranch)
             addChild(rightBranch)
             leftBranch.startGrowing()
             rightBranch.startGrowing()
         }
     }
-    
+
     func grow() {
         if canGrow {
             self.currentGrowSteps += 1
@@ -150,6 +150,10 @@ class FractalBranch : SKShapeNode {
 
 
 struct FractalBranchTemplate {
+    
+    static let leafFillColors   : [SKColor] = [.green, .magenta, .orange, .blue,   .purple]
+    static let leafStrokeColors : [SKColor] = [.brown, .blue,    .brown,  .purple, .blue]
+
     var sizeMultiplier : Float = 0.67
     var nextBranchAngle : Float = 45.0
     var branchLengthJitterLowBoundry : Float = -0.2
@@ -164,6 +168,6 @@ struct FractalBranchTemplate {
 
     var leafFillColor : SKColor = .green
     var leafStrokeColor : SKColor = .brown
-    var leafGlowWidth = CGFloat(0)
+    var leafGlowWidth = CGFloat(Float(3))
     var leafDimension = CGSize(width: 8.0, height: 8.0)
 }

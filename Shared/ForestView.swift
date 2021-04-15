@@ -24,6 +24,10 @@ class ForestScene : SKScene {
         var template = FractalBranchTemplate()
         template.sizeMultiplier = Float.random(in: 0.63...0.7)
         template.nextBranchAngle = Float.random(in: 35...50)
+        let colorOffset = Int.random(in: 0...FractalBranchTemplate.leafStrokeColors.count - 1)
+        template.leafFillColor = FractalBranchTemplate.leafFillColors[colorOffset]
+        template.leafStrokeColor = FractalBranchTemplate.leafStrokeColors[colorOffset]
+
         let tree = FractalTree(name : "tree", root : CGPoint(x: location.x, y: 0), maxTrunkLength: maxLength, angle : trunkAngle(), template : template)
         trees.append(tree)
         addChild(tree.trunk)
@@ -31,7 +35,7 @@ class ForestScene : SKScene {
     }
     
     private func trunkAngle() -> Float {
-        let angle = Float.random(in: 0...5)
+        let angle = Float(Int.random(in: 0...5))
         if (Bool.random()) {
             return angle
         }

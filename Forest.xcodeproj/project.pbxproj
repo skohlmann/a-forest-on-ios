@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45D862DD26281D400019DC9E /* Leaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D862DC26281D400019DC9E /* Leaf.swift */; };
-		45D862DE26281D400019DC9E /* Leaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D862DC26281D400019DC9E /* Leaf.swift */; };
 		45DC0D4A261F1E4B006C2B16 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D49261F1E4B006C2B16 /* Tests_iOS.swift */; };
 		45DC0D57261F1E4B006C2B16 /* ForestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */; };
 		45DC0D59261F1E4B006C2B16 /* PhysicalDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */; };
@@ -32,7 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		45D862DC26281D400019DC9E /* Leaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaf.swift; sourceTree = "<group>"; };
 		45DC0D2E261F1E4A006C2B16 /* ForestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestApp.swift; sourceTree = "<group>"; };
 		45DC0D2F261F1E4A006C2B16 /* PhysicalDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDropView.swift; sourceTree = "<group>"; };
 		45DC0D30261F1E4B006C2B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +84,6 @@
 				45DC0D8A2621815C006C2B16 /* FractalTree.swift */,
 				45DC0D9826218A83006C2B16 /* FractalBranch.swift */,
 				45DC0DAD2621E09C006C2B16 /* ForestView.swift */,
-				45D862DC26281D400019DC9E /* Leaf.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -222,7 +218,6 @@
 				45DC0D9926218A83006C2B16 /* FractalBranch.swift in Sources */,
 				45DC0D7926201EB9006C2B16 /* Utils.swift in Sources */,
 				45DC0DAE2621E09C006C2B16 /* ForestView.swift in Sources */,
-				45D862DD26281D400019DC9E /* Leaf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +226,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DC0D4A261F1E4B006C2B16 /* Tests_iOS.swift in Sources */,
-				45D862DE26281D400019DC9E /* Leaf.swift in Sources */,
 				45DC0D9B26218A83006C2B16 /* FractalBranch.swift in Sources */,
 				45DC0DB02621E09C006C2B16 /* ForestView.swift in Sources */,
 			);
