@@ -19,7 +19,6 @@ class ForestScene : SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {return}
         let location = touch.location(in: self)
-        print("location: \(location)")
         
         let maxLength = map(Float(location.y), vallow: 0, valhi: Float(height), tarlow: 30, tarhi: Float(height) / 5.333)
         var template = FractalBranchTemplate()

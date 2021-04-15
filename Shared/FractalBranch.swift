@@ -30,7 +30,13 @@ class FractalBranch : SKShapeNode {
     
     var canGrow : Bool {
         get {
-            return !self.finished || self.currentGrowSteps < self.growSteps
+            return !isFinished() || isGrowing()
+        }
+    }
+    
+    var hasLeaf : Bool {
+        get {
+            self.level >= self.template.firstLeafLevel && (!isFinished() || self.level >= self.template.maxLevel)
         }
     }
     
@@ -89,13 +95,21 @@ class FractalBranch : SKShapeNode {
             self.currentGrowSteps += 1
             let path = CGMutablePath()
             self.strokeColor = self.template.color
+            self.fillColor = self.template.color
             let l = growLength
             path.addLines(between: [CGPoint(x:0,y:0), CGPoint(x:0, y:Int(growLength))])
-            self.path = path
+            path.closeSubpath()
             if l >= self.length {
                 self.finished.toggle()
                 createNewBranches()
             }
+            if hasLeaf {
+                self.strokeColor = self.template.leafStrokeColor
+                self.fillColor = self.template.leafFillColor
+                path.addEllipse(in: CGRect(x: 0, y: CGFloat(growLength), width: self.template.leafDimension.width, height: self.template.leafDimension.height))
+                path.closeSubpath()
+            }
+            self.path = path
         }
         if self.hasActions() && isFinished() {
             self.removeAllActions()
@@ -146,5 +160,10 @@ struct FractalBranchTemplate {
     var branchWeight : Float = 1
     var growSteps : Int = 20
     var firstLeafLevel = 1
-    var maxLevel = 10
+    var maxLevel = 9
+
+    var leafFillColor : SKColor = .green
+    var leafStrokeColor : SKColor = .brown
+    var leafGlowWidth = CGFloat(0)
+    var leafDimension = CGSize(width: 8.0, height: 8.0)
 }
